@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/script.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <div class="logo"><i class="bi bi-cart3"></i> EasyShop</div>
+
+        <div class="right">
+
+            <div class="wishCount">
+                <span id="wish-quantity">0</span>
+                <a href="#" class="wishlist"><i class="bi bi-heart-fill"></i></a>
+            </div>
+
+        <div class="cartCount">
+          <span id="pop-quantity">0</span>
+          <a href="#" class="bag"><i class="bi bi-bag-heart-fill"></i></a>
+        </div>
+
+        <div>
+          <a href="#" class="login">Sign In</a>
+        </div>
+        <div>
+          <a href="#" class="register">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="slideshow">
+        <!-- Slide 1 -->
+        <div class="slides fade active">
+          <img
+            src="https://images.unsplash.com/photo-1685640206182-c51b8aa9b686?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvcHBpbmclMjBjYXJ0fGVufDB8fDB8fHww"
+            alt="Shopping experience"
+          />
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slides fade">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1683141052679-942eb9e77760?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D"
+            alt="Gift shopping"
+          />
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slides fade">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1739350938430-8f0d88555d6e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNob3BwaW5nJTIwZm9yJTIwZnVybml0dXJlfGVufDB8fDB8fHww"
+            alt="Furniture shopping"
+          />
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slides fade">
+          <img
+            src="https://images.unsplash.com/photo-1672145967042-ee6142eabeeb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVhdXR5JTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D"
+            alt="Beauty products"
+          />
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <h1>Welcome to EasyShop</h1>
+          <p>
+            Discover amazing products at unbeatable prices. Your perfect
+            shopping experience starts here.
+          </p>
+          <a href="#" class="hero-btn">Shop Now</a>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+
+        <!-- Dots Indicator -->
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    <div class="categorySelector">
+  <h3>Shop by Category</h3>
+  <div class="category-options">
+    <!-- All Categories -->
+    <label class="category-option">
+      <input type="radio" name="category" value="" checked>
+      <div class="category-icon">
+        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hvcHBpbmclMjBjYXJ0fGVufDB8fDB8fHww" alt="All Categories">
+      </div>
+      <span class="category-name">All</span>
+    </label>
+    
+    <!-- Beauty -->
+    <label class="category-option">
+      <input type="radio" name="category" value="beauty">
+      <div class="category-icon">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8fDA%3D" alt="Beauty">
+      </div>
+      <span class="category-name">Beauty</span>
+    </label>
+    
+    <!-- Fragrances -->
+    <label class="category-option">
+      <input type="radio" name="category" value="fragrances">
+      <div class="category-icon">
+        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnJhZ3JhbmNlfGVufDB8fDB8fHww" alt="Fragrances">
+      </div>
+      <span class="category-name">Fragrances</span>
+    </label>
+    
+    <!-- Furniture -->
+    <label class="category-option">
+      <input type="radio" name="category" value="furniture">
+      <div class="category-icon">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlfGVufDB8fDB8fHww" alt="Furniture">
+      </div>
+      <span class="category-name">Furniture</span>
+    </label>
+    
+    <!-- Groceries -->
+    <label class="category-option">
+      <input type="radio" name="category" value="groceries">
+      <div class="category-icon">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JvY2VyaWVzfGVufDB8fDB8fHww" alt="Groceries">
+      </div>
+      <span class="category-name">Groceries</span>
+    </label>
+  </div>
+  
+  <!-- Hidden original select maintains functionality -->
+  <select name="category" id="category">
+    <option value="">Select category</option>
+    <option value="beauty">Beauty</option>
+    <option value="fragrances">Fragrances</option>
+    <option value="furniture">Furniture</option>
+    <option value="groceries">Groceries</option>
+  </select>
+</div>
+
+      <h2 style="color: white; margin: auto">Products</h2>
+
+      <div class="product-container">
+        <!--This is where products will display-->
+      </div>
+
+      <dialog class="product-modal">
+        <div class="product-modal-container">
+          <div class="left">
+            <div class="img-div">
+              <img
+                src="https://i.pinimg.com/474x/5b/fd/42/5bfd42c94c0e00cebd4cfcd34b7900d7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="desc-div">
+              <div class="name">Arcane - League of Legends</div>
+              <div class="price">R3 000.00</div>
+              <div class="reviews">
+                <i class="bi bi-star-fill"></i><span>4.8</span>
+              </div>
+              <button class="btn-primary-modal">Add to Bag</button>
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="descr-head">Description</h2>
+            <br />
+            <div class="descr">
+              The origins of two iconic League champions, set in the utopian
+              Piltover and the oppressed underground of Zaun. Reality is
+              optional. Are you ready to escape?
+            </div>
+            <br /><br />
+
+            <h2 class="reviews">Reviews</h2>
+            <div class="reviews-div">
+              <div class="review">
+                <hr style="background-color: black" />
+                <h3 class="review-name">Amile K. Msomi</h3>
+                <p class="review-descr">
+                  <em
+                    >"This is by far the best game I've touched with my console,
+                    sound is incredible, vision is out of this world The
+                    graphics are amazing. If you're a gamer, you will not regret
+                    buying this despite the price "</em
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="close">X</button>
+      </dialog>
+
+      <dialog class="cart-modal">
+        <div class="cart-modal-container">
+          <div>
+            <h2>Cart</h2>
+          </div>
+          <hr />
+          <div class="cart-container">
+            <div class="cart-product">
+              <div>
+                <img
+                  src="https://i.pinimg.com/474x/5b/fd/42/5bfd42c94c0e00cebd4cfcd34b7900d7.jpg"
+                />
+              </div>
+              <div class="right-cart">
+                <div class="center-left">
+                  <h3>Arcane - League of Legends</h3>
+                  <div class="bottom-buttons">
+                    <p>In Stock</p>
+                    <div>
+                      <p class="quantity">
+                        <button class="minus">-</button>
+                        <span class="quantity-span"> 1 </span>
+                        <button class="plus">+</button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="center-right">
+                  <h3 class="item-price">R 3 000.00</h3>
+                  <div class="bottom-buttons">
+                    <p><i class="bi bi-heart-fill"></i> Add To Wishlist</p>
+                    <p><i class="bi bi-trash3"></i> Delete</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+                <div class="total-price">
+                    <button id="clear-btn"><i class="bi bi-trash3"></i> Clear Cart</button>
+                    <h2 id="cart-total">Total: R 0.00</h2>
+                    <button id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+            <button class="close">X</button>
+        </dialog>
+
+        <dialog class="wishlist-modal">
+            
+                <div>
+                    <h2>Wishlist</h2>
+                </div>
+                <hr>
+                <div class="list-container">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/5a/1d/a1/5a1da1a62fb27fc96a6101bdd6868a0c.jpg" />
+                    </div>
+                    <div class="right-cart">
+                        <div class="center-left">
+                            <h2>Fortnite</h2>
+                            <div class="bottom-buttons">
+                                <h3 class="list-price">R999.00</h3>
+                            </div>
+                        </div>
+                        <div class="center-right">
+                            <div class="bottom-buttons">
+                                <!-- <p class="add-from-list"><i class="bi bi-bag-heart-fill"></i> Add To Bag</p> -->
+                                <p class="delete-list"><i class="bi bi-trash3"></i> Delete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="wishlist-footer">
+                    <button id="add-all-to-cart">Add All To Cart</button>
+                    <button id="clear-wishlist-btn"><i class="bi bi-trash3"></i> Clear Wishlist</button>
+                </div>
+            </div>
+            <button class="close">X</button>
+        </dialog>
+
+
+      <dialog class="login-modal">
+        <div class="login-modal-container">
+          <h2>Sign in with email</h2>
+          <hr />
+          <br />
+          <div class="input-div">
+            <input
+              type="email"
+              name="email"
+              id="log-in-email"
+              placeholder="Email"
+            />
+            <input
+              type="password"
+              name="password"
+              id="log-in-password"
+              placeholder="Password"
+            />
+          </div>
+
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          <button id="login-btn"><span>Sign in</span></button>
+          <!-- Added id here -->
+          <p class="sign-option">Or Sign In With</p>
+
+          <div class="social-icons">
+            <div><i class="bi bi-google"></i></div>
+            <div><i class="bi bi-facebook"></i></div>
+            <div><i class="bi bi-github"></i></div>
+          </div>
+        </div>
+
+        <button class="close">X</button>
+      </dialog>
+
+      <dialog class="register-modal">
+        <div class="register-modal-container">
+          <h2>Sign up</h2>
+          <hr />
+          <br />
+          <div class="input-div">
+            <div>
+              <input type="text" class="name" id="name" placeholder="Name" />
+            </div>
+            <div>
+              <input
+                type="text"
+                class="surname"
+                id="surname"
+                placeholder="Surname"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="sign-up-email"
+                placeholder="Email"
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                name="password"
+                id="sign-up-password"
+                placeholder="Password"
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                class="password"
+                id="sign-up-re-password"
+                placeholder="Confirm password"
+              />
+            </div>
+          </div>
+          <button id="sign-up-btn"><span>Sign up</span></button>
+        </div>
+        <button class="close">X</button>
+      </dialog>
+    </main>
+
+    <footer>
+  <div class="footer-content">
+    <!-- Left Section - Quick Links -->
+    <div class="footer-section terms-privacy">
+      <h2>Quick Links</h2>
+      <p>Terms and conditions</p>
+      <p>Privacy Policy</p>
+      <p>Shipping Policy</p>
+      <p>Returns & Refunds</p>
+    </div>
+
+    <!-- Center Section - Social Media -->
+    <div class="footer-section social-section">
+      <h2>Find Us At</h2>
+      <div class="footer-icons">
+        <div><i class="bi bi-instagram"></i></div>
+        <div><i class="bi bi-whatsapp"></i></div>
+        <div><i class="bi bi-linkedin"></i></div>
+        <div><i class="bi bi-facebook"></i></div>
+      </div>
+      <div class="google-location">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>07 Aubrey Matlala Road, Soshanguve Block L, TUT</p>
+      </div>
+    </div>
+
+    <!-- Right Section - Copyright -->
+    <div class="footer-section copyright-info">
+      <div class="google-location">
+        <i class="bi bi-envelope-fill"></i>
+        <p>info@easyshop.com</p>
+      </div>
+      <div class="google-location">
+        <i class="bi bi-telephone-fill"></i>
+        <p>+27 79 946 7887</p>
+      </div>
+      <p class="copyright">&copy; 2025 EasyShop. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
